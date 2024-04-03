@@ -82,6 +82,7 @@ class DBQuery:
                     cursor.execute(stmt_str, [classid])
                     row = cursor.fetchone()
                     
+                    # changed row to classid
                     if classid == None:
                         err_str = "Non-existing classid"
                         print(err_str, file=sys.stderr)
